@@ -1,0 +1,71 @@
+.container {
+    width: 100%;
+    height: 600px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: auto;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "menu messages messages"
+                         "menu messages messages"
+                         "menu messages messages"
+                         "menu messages messages"
+                         "menu messages messages"
+                         "menu chatInput chatInput";
+    background-color: #bdc3c7;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #34495e;
+    height: 582px;
+}
+
+.channels li {
+    list-style: none;
+    background-color: #34495e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.channels a {
+    color: #fff;
+}
+#messages {
+    grid-area: messages;
+    height: 502px;
+    margin: 0 0 0 5px;
+    overflow-y: scroll;
+    list-style: none;
+}
+
+/* INPUT MESSAGES */
+
+.chatInput {
+    grid-area: chatInput;
+    background-color: #34495e;
+    color: black;
+    font-family: sans-serif;
+    height: 80px;
+}
+
+#name {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#message {
+    width: 90%;
+    height: 32px;
+    margin-left: 5px;
+}
+
+#send {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #2c3e50;
+}

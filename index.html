@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="server.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>ChatAPI</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        A{text-decoration: none;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+        <ul class="channels">
+            <li><a href="#">General</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+    </div>
+    <div id="messages">
+    
+    </div>
+    <br>
+    <div class="chatInput">
+        <form>
+            <input id="name" placeholder="Name">
+            <textarea id="message" placeholder="Your Message Here"></textarea>
+            <button id="send" class="btn btn-success"><i class="fas fa-location-arrow"></i></button>    
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="messages.js"></script>
+</body>
+</html>
